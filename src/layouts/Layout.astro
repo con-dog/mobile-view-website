@@ -18,8 +18,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "MobileView"
-  : "MobileView - Responsive Device Simulator";
+  ? title + " | " + "Mobile View"
+  : "Mobile View - Responsive Device Simulator";
 ---
 
 <!DOCTYPE html>
@@ -31,17 +31,17 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={makeTitle}
-      description="MobileView is a responsive design tool for simultaneous device testing of your site."
+      description="Mobile View is a responsive design tool for simultaneous device testing of your site."
       canonical={canonicalURL}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `MobileView - Responsive Device Simulator`,
+          title: `Mobile View - Responsive Device Simulator`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "MobileView Homepage Screenshot",
+          alt: "Mobile View Homepage Screenshot",
         },
       }}
     />
