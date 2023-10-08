@@ -1,8 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Link from "@components/ui/link.astro";
-import { Astronav, MenuIcon, MenuItems } from "astro-navbar";
-import Dropdown from "./dropdown.astro";
+import { Astronav, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
@@ -43,7 +41,7 @@ const menuitems = [
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+      <!-- <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           {
             menuitems.map((item, index) => (
@@ -73,7 +71,7 @@ const menuitems = [
           <Link href="#" style="muted" block size="md">Log in</Link>
           <Link href="#" size="md" block>Sign up</Link>
         </div>
-      </MenuItems>
+      </MenuItems> -->
     </Astronav>
     <!-- <div>
       <div class="hidden lg:flex items-center gap-4">
